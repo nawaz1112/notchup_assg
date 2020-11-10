@@ -48,7 +48,7 @@ const TrialForm = () => {
 
     const onSubmit = (data, e) => {
         e.target.reset();
-        axios.post('http://localhost:5000/api/users/', data)
+        axios.post('/api/users/', data)
             .then(res => {
                 if(res.data){
                     alert("Booked Successful");
