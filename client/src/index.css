@@ -1,0 +1,129 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+.wrapper {
+  display: inherit;
+}
+
+.hero-text {
+  flex: 1;
+}
+
+.hero-heading {
+  color: #ED1566;
+  font-size: 4rem;
+  line-height: 4rem;
+  padding: 3rem;
+}
+
+.hero-sub {
+  font-size: 1.6rem;
+  padding: 0rem 3rem;
+}
+
+.hero-image {
+  display: none;
+}
+
+@media(min-width:900px) {
+  .wrapper {
+    display: flex;
+  }
+  .hero-image {
+    display: flex;
+    flex: 1;
+  }
+}
+
+.hero-image img {
+  width: 100%;
+}
+
+.wrapper button {
+  background-color: #ED1566;
+  color: white;
+  line-height: 1rem;
+  padding: 1rem;
+  border-radius: 30px;
+  margin-top: 1.4rem;
+  cursor: pointer;
+}
+
+.wrapper button a {
+  color: white;
+  text-decoration: none; 
+}
+
+.sub-div {
+  padding: 4rem;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  color: rgb(2, 145, 133);
+}
+
+.form-head {
+  color: rgb(0, 85, 166);
+  text-align: center;
+  font-weight: bold;
+  font-size: 2rem;
+  padding: 4rem;
+}
+
+.lable {
+  padding: 0;
+  margin: 0;
+}
+
+.input {
+  padding: 0;
+  margin: 0;
+}
+
+.form-data {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 10px;
+}
+
+.form-feild {
+  justify-self: left;
+  margin-left: 30%;
+  padding: 10px;
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  background-color: rgb(244, 245, 246);
+}
+
+.form-lable {
+  font-size: 1.4rem;
+  font-weight: 600;
+  justify-self: left;
+  color: rgb(76, 90, 89);
+}
+
+.form-input {
+  border-radius: 5px;
+  box-sizing: border-box;
+  justify-self: left;
+  width: 500px;
+  outline: none;
+}
+
+.form-feild button {
+  padding: 15px;
+  font-size: 1.4rem;
+  color: white;
+  background-color: #4B42FF;
+  line-height: 0.5;
+  border-radius: 40px;
+}
