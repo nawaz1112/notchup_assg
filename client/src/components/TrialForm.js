@@ -48,11 +48,14 @@ const TrialForm = () => {
 
     const onSubmit = (data, e) => {
         e.target.reset();
-        axios.post('/api/users/', data)
+        axios.post('/api/users/', data, {
+            headers: { "Access-Control-Allow-Origin": "*" },
+        })
             .then(res => {
-                if(res.data){
+                console.log(res)
+                if (res.data) {
                     alert("Booked Successful");
-                }else{
+                } else {
                     alert("There was an error in booking your class");
                 }
             })

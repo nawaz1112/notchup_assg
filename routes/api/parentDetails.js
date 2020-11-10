@@ -60,7 +60,7 @@ router.post('/', (req, res) => {
         courseName: req.body.courseName,
         date: req.body.date
     });
-
+console.log(req.body)
     newPost.save()
         .then(post => res.send(post))
         .catch(err => res.send(err));
