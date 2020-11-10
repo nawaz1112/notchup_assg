@@ -19,8 +19,8 @@ code {
 
 .hero-heading {
   color: #ED1566;
-  font-size: 4rem;
-  line-height: 4rem;
+  font-size: 3rem;
+  line-height: 3rem;
   padding: 3rem;
 }
 
@@ -40,6 +40,12 @@ code {
   .hero-image {
     display: flex;
     flex: 1;
+  }
+  .hero-heading {
+    color: #ED1566;
+    font-size: 4rem;
+    line-height: 4rem;
+    padding: 3rem;
   }
 }
 
